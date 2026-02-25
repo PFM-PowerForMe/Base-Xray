@@ -1,0 +1,20 @@
+{
+	"dns": {
+		"servers": [
+			{
+				"tag": "global-dns",
+				"address": "quic+local://dns.adguard.com"
+			},
+			{
+				"tag": "cn-dns",
+				"address": "quic+local://dns.alidns.com",
+				"domains": [
+					"geosite:cn"
+				],
+				"skipFallback": true
+			}
+		],
+		"queryStrategy": "UseSystem",
+		"tag": "dns_inbound"
+	}
+}

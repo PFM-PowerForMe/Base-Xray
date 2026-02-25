@@ -1,0 +1,38 @@
+{
+	"routing": {
+		"domainStrategy": "IPIfNonMatch",
+		"rules": [
+			{
+				"inboundTag": [
+					"ws-in"
+				],
+				"port": 53,
+				"outboundTag": "dns-out"
+			},
+			{
+				"inboundTag": [
+					"dns-in"
+				],
+				"outboundTag": "dns-out"
+			},
+			{
+				"domain": [
+					"geosite:cn"
+				],
+				"outboundTag": "warp"
+			},
+			{
+				"ip": [
+					"geoip:cn"
+				],
+				"outboundTag": "warp"
+			},
+			{
+				"ip": [
+					"geoip:private"
+				],
+				"outboundTag": "direct"
+			}
+		]
+	}
+}

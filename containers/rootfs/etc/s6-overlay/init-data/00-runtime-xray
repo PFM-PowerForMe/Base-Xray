@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+set -e
+
+mkdir -pv /run/xray
+chown www-data:www-data -R /run/xray
+chown www-data:www-data -R /usr/share/xray
