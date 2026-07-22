@@ -1,8 +1,6 @@
 {
 	"log": {
 		"loglevel": "warning",
-		"dnsLog": true,
-		"access": "/proc/self/fd/1",
-		"error": "/proc/self/fd/2"
+		"dnsLog": true
 	}
 }

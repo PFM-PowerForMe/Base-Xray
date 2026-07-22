@@ -1,6 +1,5 @@
 #!/command/execlineb -P
 with-contenv
 s6-notifyoncheck
-s6-setuidgid www-data
 export XRAY_LOCATION_CONFIG /usr/share/xray
 /usr/sbin/xray run -confdir /etc/xray/
