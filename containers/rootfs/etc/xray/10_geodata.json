@@ -1,0 +1,16 @@
+{
+    "geodata": {
+        "cron": "0 4 * * *",
+        "outbound": "direct",
+        "assets": [
+            {
+                "url": "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/geoip.dat",
+                "file": "geoip.dat"
+            },
+            {
+                "url": "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/geosite.dat",
+                "file": "geosite.dat"
+            }
+        ]
+    }
+}

@@ -3,7 +3,7 @@
 		"servers": [
 			{
 				"tag": "global-dns",
-				"address": "quic+local://dns.adguard.com"
+				"address": "https+local://kawxz31kf0.cloudflare-gateway.com/dns-query"
 			},
 			{
 				"tag": "cn-dns",
@@ -15,6 +15,13 @@
 			}
 		],
 		"queryStrategy": "UseSystem",
-		"tag": "dns_inbound"
+		"disableCache": false,
+		"serveStale": false,
+		"serveExpiredTTL": 0,
+		"disableFallback": false,
+		"disableFallbackIfMatch": false,
+		"enableParallelQuery": false,
+		"useSystemHosts": false,
+		"tag": "dns-in"
 	}
 }
