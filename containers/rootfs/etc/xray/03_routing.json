@@ -4,7 +4,8 @@
 		"rules": [
 			{
 				"inboundTag": [
-					"http-in"
+					"http-in",
+					"http2-in"
 				],
 				"port": 53,
 				"outboundTag": "dns-out"

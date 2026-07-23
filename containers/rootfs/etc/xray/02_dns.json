@@ -3,11 +3,11 @@
 		"servers": [
 			{
 				"tag": "global-dns",
-				"address": "https+local://kawxz31kf0.cloudflare-gateway.com/dns-query"
+				"address": "https+local://dns.google/dns-query"
 			},
 			{
 				"tag": "cn-dns",
-				"address": "quic+local://dns.alidns.com",
+				"address": "https+local://dns.cloudflare.com/dns-query",
 				"domains": [
 					"geosite:cn"
 				],
